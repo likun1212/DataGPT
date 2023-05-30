@@ -17,7 +17,7 @@ def load_data(file):
 
 @st.cache_data
 def load_model():
-    OPENAI_API_KEY = "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"
+    OPENAI_API_KEY = "your key"
     llm = OpenAI(api_token=OPENAI_API_KEY)
     pandas_ai = PandasAI(llm)
     return pandas_ai
